@@ -1,0 +1,9 @@
+def quickselect(array, k):
+	import heapq
+	array=[-1*x for x in array]
+	heapq.heapify(array)
+	while len(array)>k:
+		heapq.heappop(array)
+	print(array)
+	return -1*array[0]
+    pass
